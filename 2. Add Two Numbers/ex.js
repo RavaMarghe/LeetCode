@@ -5,7 +5,7 @@ class ListNode {
   }
 }
 
-const addTwoNumbers = function (l1, l2) {
+function addTwoNumbers(l1, l2) {
   const result = new ListNode();
 
   let curr = result;
@@ -33,6 +33,8 @@ const addTwoNumbers = function (l1, l2) {
   }
 
   return result.next;
-};
+}
 
 console.log(addTwoNumbers([2, 4, 3], [5, 6, 4]));
+console.log(addTwoNumbers([0], [0]));
+console.log(addTwoNumbers([9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]));
