@@ -1,4 +1,4 @@
-var longestPalindrome = function (s) {
+function longestPalindrome(s) {
   let result = "";
 
   for (let i = 0; i < s.length; i++) {
@@ -20,7 +20,7 @@ var longestPalindrome = function (s) {
     if (result.length < right - left + 1) result = s.slice(left, right + 1);
   }
   return result;
-};
+}
 
 console.log(longestPalindrome("babad"));
 console.log(longestPalindrome("cbbd"));
